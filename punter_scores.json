@@ -1,90 +1,90 @@
 [
     {
-        "name": "Corey Bojorquez",
-        "team": "CLE",
+        "name": "Mitch Wishnowsky",
+        "team": "SF",
         "punts": 8,
-        "punt_yards": 384,
-        "inside_20": 6,
-        "inside_10": 0,
-        "touchbacks": 2,
-        "blocked": 0,
-        "fantasy_score": 22.36
-    },
-    {
-        "name": "Logan Cooke",
-        "team": "JAX",
-        "punts": 7,
-        "punt_yards": 320,
-        "inside_20": 6,
-        "inside_10": 1,
-        "touchbacks": 1,
-        "blocked": 0,
-        "fantasy_score": 22.3
-    },
-    {
-        "name": "Johnny Hekker",
-        "team": "CAR",
-        "punts": 7,
-        "punt_yards": 324,
-        "inside_20": 2,
-        "inside_10": 1,
-        "touchbacks": 0,
-        "blocked": 0,
-        "fantasy_score": 17.46
-    },
-    {
-        "name": "Tress Way",
-        "team": "WAS",
-        "punts": 5,
-        "punt_yards": 215,
+        "punt_yards": 409,
         "inside_20": 3,
-        "inside_10": 2,
-        "touchbacks": 2,
-        "blocked": 0,
-        "fantasy_score": 14.1
-    },
-    {
-        "name": "Bryan Anger",
-        "team": "DAL",
-        "punts": 6,
-        "punt_yards": 281,
-        "inside_20": 1,
         "inside_10": 0,
         "touchbacks": 0,
         "blocked": 0,
-        "fantasy_score": 12.74
+        "fantasy_score": 20.86
     },
     {
         "name": "Ryan Stonehouse",
         "team": "TEN",
-        "punts": 4,
-        "punt_yards": 197,
+        "punts": 8,
+        "punt_yards": 367,
         "inside_20": 2,
         "inside_10": 0,
         "touchbacks": 1,
         "blocked": 0,
-        "fantasy_score": 9.88
+        "fantasy_score": 16.68
+    },
+    {
+        "name": "Bryan Anger",
+        "team": "DAL",
+        "punts": 7,
+        "punt_yards": 336,
+        "inside_20": 1,
+        "inside_10": 1,
+        "touchbacks": 0,
+        "blocked": 0,
+        "fantasy_score": 16.44
+    },
+    {
+        "name": "Corey Bojorquez",
+        "team": "CLE",
+        "punts": 8,
+        "punt_yards": 348,
+        "inside_20": 1,
+        "inside_10": 1,
+        "touchbacks": 2,
+        "blocked": 0,
+        "fantasy_score": 14.92
     },
     {
         "name": "A.J. Cole",
         "team": "LV",
-        "punts": 5,
-        "punt_yards": 216,
-        "inside_20": 0,
+        "punts": 6,
+        "punt_yards": 270,
+        "inside_20": 1,
         "inside_10": 0,
         "touchbacks": 0,
         "blocked": 0,
-        "fantasy_score": 8.64
+        "fantasy_score": 12.3
     },
     {
-        "name": "Mitch Wishnowsky",
-        "team": "SF",
-        "punts": 3,
-        "punt_yards": 144,
-        "inside_20": 1,
-        "inside_10": 1,
+        "name": "Tress Way",
+        "team": "WAS",
+        "punts": 7,
+        "punt_yards": 313,
+        "inside_20": 0,
+        "inside_10": 0,
         "touchbacks": 2,
-        "blocked": 1,
-        "fantasy_score": 3.76
+        "blocked": 0,
+        "fantasy_score": 10.52
+    },
+    {
+        "name": "Johnny Hekker",
+        "team": "CAR",
+        "punts": 3,
+        "punt_yards": 135,
+        "inside_20": 3,
+        "inside_10": 0,
+        "touchbacks": 0,
+        "blocked": 0,
+        "fantasy_score": 9.9
+    },
+    {
+        "name": "Logan Cooke",
+        "team": "JAX",
+        "punts": 3,
+        "punt_yards": 132,
+        "inside_20": 0,
+        "inside_10": 0,
+        "touchbacks": 1,
+        "blocked": 0,
+        "fantasy_score": 4.28
     }
 ]
