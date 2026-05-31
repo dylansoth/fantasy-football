@@ -1,0 +1,55 @@
+# ==============================================================================
+# GitHub Actions Automation Workflow (.github/workflows/update_scores.yml)
+# ==============================================================================
+
+name: Weekly Punter Scores Update
+
+# Core Skill: Event Triggers
+# Workflows can be triggered by schedules (cron jobs) or manual developer button clicks
+on:
+  schedule:
+    # Run every Tuesday at 9:00 AM UTC (during NFL season, stats are complete late Monday night)
+    # Format: minute hour day-of-month month day-of-week
+    - cron: '0 9 * * 2'
+  workflow_dispatch:
+    # Enables a "Run workflow" button in the GitHub Web Actions interface for manual testing
+
+# Core Skill: Permission Scopes
+# Modern GitHub security requires explicitly granting write access to the runner's
+# GITHUB_TOKEN if we want to commit updated data files back to the repository.
+permissions:
+  contents: write
+
+jobs:
+  update-scores:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Download code from repo onto the virtual runner machine
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Provision a clean Python execution environment
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # Step 3: Run the scraper script (generates mock stats)
+      - name: Run data fetch
+        run: python3 generate_mock_data.py
+
+      # Step 4: Run the calculations engine (processes math & updates JSON)
+      - name: Run scoring calculations
+        run: python3 calc_scores.py
+
+      # Step 5: Commit and push changes
+      # We configure git with the official GitHub Actions Bot credentials.
+      # [skip ci] prevents the bot's commit from re-triggering this workflow in a loop.
+      - name: Commit and push updated leaderboard data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add punter_scores.json
+          git commit -m "data: auto-update punter leaderboard scores [skip ci]" || echo "No changes to commit"
+          git push
